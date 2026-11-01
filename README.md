@@ -89,3 +89,9 @@ Try uploading different types of images to explore the model's capabilities and 
 - **Indoor rooms:** Check object segmentation around chairs, desks, and monitors.
 - **Outdoor streets:** Observe perspective convergence along roads and depth handling of the sky.
 - **Reflective & transparent objects:** Test mirrors and windows to observe how specularity challenges monocular depth priors.
+
+---
+
+## 🛠️ Colab UTF-8 & Surrogate Encoding Fix
+
+If running in Google Colab or modern Jupyter kernels with Python 3.12+, raw unicode surrogate escapes (e.g. `\ud83d...`) in standard print calls can trigger `UnicodeEncodeError: 'utf-8' codec can't encode characters: surrogates not allowed` inside Tornado's async ZeroMQ stream. DepthScope uses clean, direct UTF-8 character encoding and environment guards so notebook output streams cleanly without terminal exceptions.
