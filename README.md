@@ -8,8 +8,8 @@ A simple project that predicts depth from 2D photos using the Depth Anything V2 
 - Shows a side-by-side comparison (original, grayscale depth, color depth)
 - Downloads the output depth map
 
-## Quickstart: Running in Google Colab
+## How to run in Google Colab
 1. Open [Google Colab](https://colab.research.google.com/).
 2. Upload `DepthScope.ipynb`.
-3. Set runtime to T4 GPU.
-4. Run all cells and upload your photo.
+3. Set runtime to GPU (`Runtime` > `Change runtime type` > `T4 GPU`).
+4. Run all cells and pick an image when asked.
