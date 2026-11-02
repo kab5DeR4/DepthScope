@@ -13,3 +13,8 @@ A simple project that predicts depth from 2D photos using the Depth Anything V2 
 2. Upload `DepthScope.ipynb`.
 3. Set runtime to GPU (`Runtime` > `Change runtime type` > `T4 GPU`).
 4. Run all cells and pick an image when asked.
+
+## Notes
+- Brighter pixels = closer to camera.
+- Darker pixels = farther away.
+- Gives relative distance (closer vs farther), not exact meters.
